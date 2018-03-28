@@ -23,6 +23,9 @@ button {
     display: inline-block;
     vertical-align: top;
 }
+.header {
+    overflow: visible;
+}
 .hspace {
     width: 15px;
 }

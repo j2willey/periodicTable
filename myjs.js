@@ -83,6 +83,14 @@ function drawPage() {
             if (y==8){
                 $("#col"+x).append(createCell(x,-y,"vspace","","","",""));                
             } 
+            if (x ==1 && y==8) {
+                $("#col"+x).append(createCell(x,y,"header","*Lanthanoids","","",""));
+                continue;                
+            }
+            if (x ==1 && y==9) {
+                $("#col"+x).append(createCell(x,y,"header","**Actinoids","","",""));
+                continue;                
+            }
             if (!(y in elements[x])) {
                 $("#col"+x).append(createCell(x,y,"blank","","","",""));
                 continue;
